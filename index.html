@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="Form.css">
+<body>
+    <h1>Hello Ejada Employee <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAeh_Pcb7F2yQ6XPh9x3P1BlQhktpAPuV_6CJRtK_2pA&s" id="ejada"> </h1>
+    
+    <form action="" id="signup">
+        <label for="FName"><b>First Name:</b></label>
+  <input type="text" name="FName"  id="FName" onfocus="value=''" onchange="CheckName(id,'err')" > <span id="err"></span><br><br>
+  <label for="LName"><b>Last Name:</b></label>
+  <input type="text" name="LName"  id="LName" onchange="CheckName(id,'err2')"><span id="err2"></span><br><br>
+  <label for="Number"><b>&nbsp&nbsp;Number:</b></label> &nbsp &nbsp;
+  <input type="text" name="Number"  id="Number" onchange="CheckNumber(id,'err3')" ><span id="err3"></span> <br> <br>
+
+  <button  type="button"  id="submit"  onclick="Submit()"> <b>Submit</b></button>
+
+
+
+
+
+  <script src="Form.js"></script>
+    </form>
+</body>
+</html>
